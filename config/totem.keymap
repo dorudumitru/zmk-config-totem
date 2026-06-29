@@ -50,6 +50,16 @@
             bindings = <&kp DEL>;
             key-positions = <1 2>;
         };
+
+        COMBO_QUOTE {
+            bindings = <&none>;
+            key-positions = <17 18>;
+        };
+
+        COMBO_TAB {
+            bindings = <&none>;
+            key-positions = <11 12>;
+        };
     };
 
     keymap {
