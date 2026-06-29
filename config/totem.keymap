@@ -52,12 +52,12 @@
         };
 
         COMBO_QUOTE {
-            bindings = <&none>;
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <17 18>;
         };
 
         COMBO_TAB {
-            bindings = <&none>;
+            bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
     };
