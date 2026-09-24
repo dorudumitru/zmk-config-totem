@@ -76,10 +76,10 @@
 
         num_symb {
             bindings = <
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0
-           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RCTRL     &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
-&kp GRAVE  &trans        &trans        &trans          &trans        &kp MINUS           &kp EQUAL          &trans        &trans           &trans         &trans         &kp BACKSLASH
-                                       &tog 1          &kp K_CMENU   &trans              &trans             &trans        &trans
+        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0
+        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RCTRL     &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
+&trans  &trans        &trans        &trans          &kp MINUS     &kp GRAVE           &kp BACKSLASH      &kp EQUAL     &trans           &trans         &trans         &trans
+                                    &tog 1          &kp K_CMENU   &trans              &trans             &trans        &trans
             >;
         };
 
