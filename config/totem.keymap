@@ -71,6 +71,16 @@
             bindings = <&kp K_CALCULATOR>;
             key-positions = <10 21>;
         };
+
+        COMBO_HOME {
+            bindings = <&kp HOME>;
+            key-positions = <0 10>;
+        };
+
+        COMBO_END {
+            bindings = <&kp END>;
+            key-positions = <9 19>;
+        };
     };
 
     keymap {
