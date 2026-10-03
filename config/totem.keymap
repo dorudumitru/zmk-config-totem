@@ -61,6 +61,16 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        COMBO_PS {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <30 19>;
+        };
+
+        COMBO_CALC {
+            bindings = <&kp K_CALCULATOR>;
+            key-positions = <10 21>;
+        };
     };
 
     keymap {
@@ -68,10 +78,10 @@
 
         base {
             bindings = <
-                      &kp Q              &kp W              &kp E                &kp R           &kp T           &kp Y            &kp U           &kp I                 &kp O               &kp P
-                      &HRM_L LEFT_GUI A  &HRM_L LEFT_ALT S  &HRM_L LEFT_SHIFT D  &HRM_L LCTRL F  &kp G           &kp H            &HRM_R RCTRL J  &HRM_R RIGHT_SHIFT K  &HRM_R RIGHT_ALT L  &HRM_R RIGHT_GUI SEMI
-&mt K_CALCULATOR TAB  &kp Z              &kp X              &kp C                &kp V           &kp B           &kp N            &kp M           &kp COMMA             &kp DOT             &kp FSLH               &mt PRINTSCREEN SINGLE_QUOTE
-                                                            &mo 4                &kp SPACE       &lt 2 ESCAPE    &lt 1 BACKSPACE  &lt 3 ENTER     &trans
+        &kp Q              &kp W              &kp E                &kp R           &kp T           &kp Y            &kp U           &kp I                 &kp O               &kp P
+        &HRM_L LEFT_GUI A  &HRM_L LEFT_ALT S  &HRM_L LEFT_SHIFT D  &HRM_L LCTRL F  &kp G           &kp H            &HRM_R RCTRL J  &HRM_R RIGHT_SHIFT K  &HRM_R RIGHT_ALT L  &HRM_R RIGHT_GUI SEMI
+&trans  &kp Z              &kp X              &kp C                &kp V           &kp B           &kp N            &kp M           &kp COMMA             &kp DOT             &kp FSLH               &trans
+                                              &trans               &lt 4 SPACE     &lt 3 ESCAPE    &lt 1 BACKSPACE  &lt 2 ENTER     &trans
             >;
         };
 
@@ -80,7 +90,16 @@
         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5        &kp NUMBER_6       &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0
         &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RCTRL     &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI
 &trans  &trans        &trans        &trans          &kp MINUS     &kp GRAVE           &kp BACKSLASH      &kp EQUAL     &trans           &trans         &trans         &trans
-                                    &tog 1          &kp K_CMENU   &trans              &trans             &trans        &trans
+                                    &trans          &kp K_CMENU   &trans              &trans             &trans        &trans
+            >;
+        };
+
+        nav_bt {
+            bindings = <
+        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans    &trans    &trans  &trans     &trans
+        &trans        &trans        &trans        &trans        &trans            &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans  &trans        &trans        &trans        &trans        &trans            &trans    &trans    &trans  &trans     &trans  &trans
+                                    &trans        &bt BT_CLR    &bt BT_CLR_ALL    &trans    &trans    &trans
             >;
         };
 
@@ -93,20 +112,11 @@
             >;
         };
 
-        nav {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans
-        &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
-            >;
-        };
-
         mouse {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans
         &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
                         &trans  &trans  &trans    &mkp LCLK       &mkp MCLK       &mkp RCLK
             >;
         };
